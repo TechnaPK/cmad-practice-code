@@ -8,12 +8,12 @@ original.innerHTML = new Date();
 
 
 
-function tellTime(){
+function tellTime( buttonName ){
 
     var now = new Date();
     var theHr = now.getHours();
     var theMin = now.getMinutes();
-    console.log("You clicked the button @ " + theHr + ":" + theMin);
+    console.log(  "You clicked the button " + buttonName + " @ " + theHr + ":" + theMin);
 
 }
 
@@ -39,7 +39,7 @@ button1.onclick = function () {
 
     result.innerHTML = nameOfToday;
 
-    tellTime();
+    tellTime( "Button 1", "ABC" );
 
 }
 
@@ -61,7 +61,7 @@ button2.onclick = function () {
 
     result.innerHTML = Math.floor( daysDiff ) + " days have been passed since you born"; 
 
-    tellTime();
+    tellTime( "Button 2" );
 
 }
 
@@ -81,7 +81,7 @@ button3.onclick = function () {
 
     result.innerHTML = "Your next birth day is '" + Math.floor( daysDiff ) + "' days away";
 
-    tellTime();
+    tellTime( "Husnain" );
 
 }
 
