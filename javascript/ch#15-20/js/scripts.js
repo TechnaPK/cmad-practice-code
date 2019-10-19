@@ -22,9 +22,30 @@ console.log( cities[ index ] )
 
 button1.onclick = function(){
 
-    alert( "Hello everyone!" );
+    alert();
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 button2.onclick = function(){
 
