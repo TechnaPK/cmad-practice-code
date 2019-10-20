@@ -1,4 +1,12 @@
-function tellTime(){
+// var num = 2+2
+// function addMe(){
+//     num = 6;
+// }
+// addMe();
+
+// alert(num)
+
+function tellTime() {
 
     var now = new Date();
     var theHr = now.getHours();
@@ -9,29 +17,23 @@ function tellTime(){
 
 }
 
-function greetUser( userName ){
 
-    alert( "Good Afternoon " + userName )
-
-}
-
-
-function calculateTax( price, taxRate ){
+function calculateTax(price, taxRate) {
 
     var tax = price * taxRate / 100;
     return tax;
 
 }
 
-function calculateTotal( price ){
+function calculateTotal(price) {
 
-    if( price > 1000  ){
+    if (price > 1000) {
         var taxRate = 14;
-    }else{
+    } else {
         var taxRate = 8;
     }
 
-    var tax = calculateTax( price, taxRate )
+    var tax = calculateTax(price, taxRate)
 
     var total = price + tax;
 
@@ -48,7 +50,7 @@ button1.onclick = function () {
     var theSec = now.getSeconds();
 
     result.innerHTML += "You clicked the button @ " + theHr + ":" + theMin + ":" + theSec + "<br />";
-    
+
     // tellTime();
 
 }
@@ -72,20 +74,12 @@ button3.onclick = function () {
 }
 
 
-button4.onclick = function () {
-
-    var username = prompt( "Enter your username" );
-
-    greetUser( username );
-
-}
-
 button5.onclick = function () {
 
-    var price = +prompt( "Enter price" );
+    var price = +prompt("Enter price");
     var taxRate = 16;
 
-    var tax = calculateTax( price, taxRate );
+    var tax = calculateTax(price, taxRate);
 
     result.innerHTML = "Tax: " + tax;
 
@@ -93,9 +87,9 @@ button5.onclick = function () {
 
 button6.onclick = function () {
 
-    var price = +prompt( "Enter price" );
+    var price = +prompt("Enter price");
 
-    var total = calculateTotal( price );
+    var total = calculateTotal(price);
 
     result.innerHTML = "Total: " + total;
 

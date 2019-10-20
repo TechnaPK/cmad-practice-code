@@ -40,6 +40,22 @@ button2.onclick = function () {
 
 }
 
+
+// for( var i = 0; i <= 3; i++ ){
+//     alert(i);
+// }
+
+// var i = 5;
+// while (i <= 3) {
+//     alert(i);
+//     i++;
+// }
+
+// var i = 5;
+// do{
+//     alert(i);
+// }while( i <= 3 );
+
 button3.onclick = function () {
 
     do {
