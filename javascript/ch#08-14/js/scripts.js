@@ -76,3 +76,23 @@ alert( message + name + "!" );
 //     alert("You're a baby");
 
 // }
+
+
+// myButton.onclick = function () {
+
+//     var num = prompt("Enter your marks?")
+//     var resultToShow = ""
+
+//     if (num >= 90) {
+//         resultToShow = "You got A+"
+//     }else if(num >= 80){
+//         resultToShow = "You got A"
+//     }else if(num >= 70){
+//         resultToShow = "You got B"
+//     }else{
+//         resultToShow = "You're fail"
+//     }
+
+//     resultDiv.innerHTML = resultToShow
+
+// }
