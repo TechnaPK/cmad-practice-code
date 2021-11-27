@@ -28,7 +28,7 @@ function calculateTax(price, taxRate) {
 function calculateTotal(price) {
 
     if (price > 1000) {
-        var taxRate = 14;
+        var taxRate = 16;
     } else {
         var taxRate = 8;
     }
