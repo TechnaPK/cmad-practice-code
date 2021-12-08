@@ -1,21 +1,32 @@
 // Ch # 8
+// myButton.onclick = function () {
 
-var message = "Good day ";
-var name = "Umar";
-var banger = "!";
+//     var message = "Good day ";
+//     var name = "Umar";
+//     var banger = "!";
 
-alert( message + name + "!" );
+//     alert(message + name + "!");
+
+// }
+
+
 
 
 
 // ----------------------------
 // Ch # 9-10
-// name = prompt( "Your name?" );
+// myButton.onclick = function () {
 
-// alert( message + name + banger );
+//     var fName = prompt("Your Name?");
 
-// if( name == "Umar" ){
-//     alert( "Good day " + name + "!" );
+//     // alert("Good Morning " + fName);
+
+//     if (fName !== "Umar") {
+
+//         alert("Good Morning " + fName);
+
+//     }
+
 // }
 
 
@@ -23,76 +34,83 @@ alert( message + name + "!" );
 
 // ----------------------------
 // Ch # 11
-// var num1 = 15;
-// var num2 = 15;
+// myButton.onclick = function () {
 
-// if( num1 > num2 ){
-//     alert( "1st number is greater than 2nd" )
+//     var num1 = 16;
+//     var num2 = 15;
+
+//     if (num1 <= num2) {
+//         alert("Yes, your condition is true")
+//     }
+
 // }
-
-
-
 
 
 // ----------------------------
 // Ch # 12-13
+// myButton.onclick = function () {
 
-// var age = prompt( "Your age?" );
-// var weight = prompt( "Your Weight?" );
+//     var age = prompt( "Your age?" );
+//     var weight = prompt( "Your Weight?" );
 
+//     if( age >= 18 && weight <= 70 ){
 
-// if( age >= 18 && weight <= 70 ){
+//         alert( "You're a smart man." );
 
-//     alert( "You're a smart man." );
+//     }else if ( age >= 18 && weight > 70 ){
 
-// }else if ( age >= 18 && weight >= 70 ){
+//         alert( "You're a fat guy." );
 
-//     alert( "You're a fat guy." );
+//     }else{
 
-// }else{
+//         alert( "You're a baby" );
 
-//     alert( "You're a baby" );
+//     }
 
 // }
+
 
 
 // ----------------------------
 // Ch # 14
-
-// var age = prompt("Your age?");
-
-// if (age >= 18) {
-
-//     var weight = prompt("Your Weight?");
-
-//     if (weight < 70) {
-//         alert("You're a smart man.");
-//     } else {
-//         alert("You're a fat guy.");
-//     }
-
-// } else {
-
-//     alert("You're a baby");
-
-// }
-
-
 // myButton.onclick = function () {
 
-//     var num = prompt("Enter your marks?")
-//     var resultToShow = ""
+//     var age = prompt("Your age?");
 
-//     if (num >= 90) {
-//         resultToShow = "You got A+"
-//     }else if(num >= 80){
-//         resultToShow = "You got A"
-//     }else if(num >= 70){
-//         resultToShow = "You got B"
-//     }else{
-//         resultToShow = "You're fail"
+//     if (age >= 18) {
+
+//         var weight = prompt("Your Weight?");
+
+//         if (weight <= 70) {
+//             alert("You're a smart man.");
+//         } else {
+//             alert("You're a fat guy.");
+//         }
+
+//     } else {
+//         alert("You're a baby");
 //     }
 
-//     resultDiv.innerHTML = resultToShow
-
 // }
+
+
+// Assignment after Lecture
+myButton.onclick = function () {
+
+    var num = prompt("Enter your marks?")
+    var resultToShow = ""
+
+    if (num >= 90) {
+        resultToShow = "You got A+"
+    }else if(num >= 80){
+        resultToShow = "You got A"
+    }else if(num >= 70){
+        resultToShow = "You got B"
+    }else{
+        resultToShow = "You're fail"
+    }
+
+    alert(resultToShow);
+    // resultDiv.innerHTML = resultToShow
+
+}
