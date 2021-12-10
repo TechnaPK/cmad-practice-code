@@ -1,30 +1,31 @@
-function Plan(name, price, pages) {
+function Person(firstName, lastName, age) {
 
-    this.name = name;
-    this.price = price;
-    this.pages = pages;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
 
     //Not a good way to define shared methods
-    // this.calcAnnual = function(){
-    //     return this.price * 12;
+    // this.fullName = function(){
+    //     return this.firstName + " " + this.lastName;
     // }
 
 }
 
 //Good way to define shared methods
-Plan.prototype.calcAnnual = function () {
-    return this.price * 12;
+Person.prototype.fullName = function () {
+    return this.firstName + " " + this.lastName;
 }
 
-var plan1 = new Plan("Basic", 3.99, 10)
-var plan2 = new Plan("Professional", 5.99, 50)
-var plan3 = new Plan("Ultimate", 9.99, 500)
+var user1 = new Person("Umar", "Ahmad", 22);
+var user2 = new Person("Ali", "Raza", 25);
+var user3 = new Person("Ahmad", "Raza", 15);
 
+console.log(user1)
 
 
 //List of Properties
 // var listOfProperties = [];
-// for (var prop in plan1) {
+// for (var prop in user) {
 //     listOfProperties.push(prop);
 // }
 

@@ -1,58 +1,34 @@
 //Blank Object
-var plan1 = {};
+var user = {};
+
+
+
+var user = {
+    name: "Umar",
+    weight: 60,
+    age: 22,
+    hobbies: ["Coding", "Reading", "Gardening"]
+};
 
 
 
 
+// Existence of a property check
+// console.log( "weight" in user )
 
 
 
-
-
-
-
-
-
-// var plan1 = {
-//     name: "Basic",
-//     price: 3.99,
-//     space: 100,
-//     transfer: 1000,
-//     pages: 10,
-//     discountMonths: [6, 7]
-// };
-
-
-
-
-
-
-
-//Property in Object
-// console.log( "price" in plan1 )
-
-
-
-
-
-
-
-
-// var plan1 = {
-
-//     name: "Basic",
-//     price: 3.99,
-//     space: 100,
-//     transfer: 1000,
-//     pages: 10,
-//     discountMonths: [6, 7],
-//     calcAnnual: function(){
-
-//         return this.price * 12;
-
+// var user = {
+//     firstName: "Umar",
+//     lastName: "Ahmad",
+//     weight: 60,
+//     age: 22,
+//     hobbies: ["Coding", "Reading", "Gardening"],
+//     fullName: function () {
+//         return this.firstName + " " + this.lastName;
 //     }
-
 // };
+
 
 
 
