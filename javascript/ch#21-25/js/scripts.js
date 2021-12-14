@@ -5,12 +5,6 @@ var abc = "this Is A ParAgrpah"
 
 var newasdf = someString.slice()
 
-var num = 5.58;
-
-var abc = Math.round(num)
-
-console.log( abc )
-
 
 //-----------------------------------------
 
@@ -31,10 +25,10 @@ button2.onclick = function () {
 button3.onclick = function () {
 
     var city = prompt("Enter your city?");
-    // var city = city.toLowerCase();
+    // city = city.toLowerCase();
 
     var cities = ["islamabad", "karachi", "lahore", "peshawar", "queta"];
-
+    
     for (var index = 0; index < cities.length; index++) {
 
         if( city === cities[ index ] ){
@@ -64,7 +58,8 @@ button5.onclick = function () {
 
     var findIndex = someString.indexOf( word );
 
-    if ( findIndex !== -1 ) {
+    // If the word is found in the string, then it's index will be equal or greater than 0
+    if ( findIndex >= 0 ) {
         result.innerHTML = word + " found in original string at index: " + findIndex;
     }else{
         result.innerHTML = word + " is not avialable in original string";
@@ -75,13 +70,11 @@ button5.onclick = function () {
 button6.onclick = function () {
 
     var replace = prompt("Enter a word to replace?");
-    var regex = new RegExp(replace, "g");
     var replaceWith = prompt("Replace with?");
 
-    var replacedString = someString.replace( regex, replaceWith );
+    var replacedString = someString.replaceAll( replace, replaceWith );
 
     result.innerHTML = replacedString;
-
 
 }
 
