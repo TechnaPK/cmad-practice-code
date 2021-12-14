@@ -32,13 +32,14 @@ button1.onclick = function () {
 
 button2.onclick = function () {
 
-    var number = prompt("Enter number");
-    var number = Number( number );
+    var numberAskedFromUser = prompt("Enter number");
+    
+    numberAskedFromUser = Number( numberAskedFromUser );
 
-    if( isNaN( number ) ){
+    if( isNaN(  numberAskedFromUser  ) ){
         result.innerHTML = "User didn't enter a number";
     }else{
-        result.innerHTML = "User entered a number: " + number;
+        result.innerHTML = "User entered a number: " + numberAskedFromUser;
     }
 }
 
@@ -58,7 +59,8 @@ button3.onclick = function () {
 button4.onclick = function () {
 
     var number = prompt("Enter number");
-    var number = Number( number );
+    number = Number( number );
+    
     var tax = number * 14.975 / 100;
     var roundedTax = tax.toFixed( 2 );
 
