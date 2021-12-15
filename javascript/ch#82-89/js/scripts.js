@@ -59,7 +59,7 @@ function checkPassword() {
         }
 
         
-        if (pass.indexOf(" ") !== -1) {
+        if (pass.indexOf(" ") >= 0) {
             throw "No spaces in the password, please.";
         }
 
