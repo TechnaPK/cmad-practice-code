@@ -1,32 +1,7 @@
 
 original.innerHTML = new Date();
 
-
-
-
 //-----------------------------------------
-
-
-function tellTimeABc( buttonName, ABC ){
-
-    var now = new Date();
-    var theHr = now.getHours();
-    var theMin = now.getMinutes();
-    console.log( buttonName + "You clicked the button @ " + theHr + ":" + theMin);
-
-}
-
-
-
-
-function greetUser( userName, abc ){
-
-    alert( "Good Afternoon " + userName )
-
-}
-
-
-
 
 
 button1.onclick = function () {
@@ -34,15 +9,12 @@ button1.onclick = function () {
     var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var now = new Date();
     var theDay = now.getDay();
-    var nameOfToday = dayNames[theDay];
 
-    result.innerHTML = nameOfToday;
+    var nameOfTheDay = dayNames[theDay];
 
-    tellTimeABc( "Button 1", "" )
+    result.innerHTML = nameOfTheDay;
 
 }
-
-
 
 
 button2.onclick = function () {
@@ -57,13 +29,9 @@ button2.onclick = function () {
     var daysDiff = msDiff / (1000 * 60 * 60 * 24); // this line may generate floating point
 
     // we remove floating point using Math.floor
-
     result.innerHTML = Math.floor( daysDiff ) + " days have been passed since you born"; 
 
-    tellTimeABc( "Waqas " )
-
 }
-
 
 
 
@@ -80,15 +48,4 @@ button3.onclick = function () {
 
     result.innerHTML = "Your next birth day is '" + Math.floor( daysDiff ) + "' days away";
 
-    tellTimeABc()
-
 }
-
-button4.onclick = function () {
-
-    var username = prompt( "Enter your username" )
-
-    greetUser( username );
-
-}
-
