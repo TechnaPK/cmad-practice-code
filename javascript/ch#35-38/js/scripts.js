@@ -6,17 +6,6 @@
 
 // alert(num)
 
-function tellTime() {
-
-    var now = new Date();
-    var theHr = now.getHours();
-    var theMin = now.getMinutes();
-    var theSec = now.getSeconds();
-
-    result.innerHTML += "You clicked the button @ " + theHr + ":" + theMin + ":" + theSec + "<br />";
-
-}
-
 
 function calculateTax(price, taxRate) {
 
@@ -41,17 +30,31 @@ function calculateTotal(price) {
 
 }
 
-
-button1.onclick = function () {
+function tellTime(buttonName) {
 
     var now = new Date();
     var theHr = now.getHours();
     var theMin = now.getMinutes();
     var theSec = now.getSeconds();
 
-    result.innerHTML += "You clicked the button @ " + theHr + ":" + theMin + ":" + theSec + "<br />";
+    result.innerHTML += "You clicked the button @ " + buttonName + ": " + theHr + ":" + theMin + ":" + theSec + "<br />";
 
-    // tellTime();
+    // return theHr + ":" + theMin + ":" + theSec;
+
+}
+
+button1.onclick = function () {
+
+    // var now = new Date();
+    // var theHr = now.getHours();
+    // var theMin = now.getMinutes();
+    // var theSec = now.getSeconds();
+
+    // result.innerHTML += "You clicked the button @ " + buttonName + ": " + theHr + ":" + theMin + ":" + theSec + "<br />";
+
+    var time = tellTime("Button ABC");
+
+    console.log(time)
 
 }
 
@@ -60,7 +63,7 @@ button1.onclick = function () {
 
 button2.onclick = function () {
 
-    tellTime();
+    tellTime("Second Button");
 
 }
 
