@@ -71,11 +71,18 @@
         <p>A good example is JavaScript <b>setTimeout()</b> </p>
         <pre>
             <code>
-                setTimeout(myFunction, 3000);
-
                 function myFunction() {
                     document.getElementById("demo").innerHTML = "I love Pakistan !!";
                 }
+                setTimeout(myFunction, 3000);
+
+                console.log("I love Pakistan too!");
+
+
+                // The function (myFunction) above will run after 3 seconds. 
+                // And the console.log function will run before the function (myFunction) above completed.
+                // Both the code is running in parallel instead of waiting for the above one to be completed.
+                // It's called code running asynchronously in JavaScript.
             </code>
         </pre>
 
