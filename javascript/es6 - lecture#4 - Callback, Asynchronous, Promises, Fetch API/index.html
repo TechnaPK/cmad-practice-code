@@ -69,14 +69,35 @@
 
         <p>Functions running in parallel with other functions are called asynchronous</p>
         <p>A good example is JavaScript <b>setTimeout()</b> </p>
+        <h3>Example 1</h3>
         <pre>
             <code>
+                console.log( "Starting" )
+
+                setTimeout(function () {
+                    console.log( "I love Pakistan." )
+                }, 3000);
+
+                console.log ('All done!')
+
+                //if it were synchronous, it would print:
+                    //Starting
+                    //I love Pakistan.
+                    //All done!
+
+            </code>
+        </pre>
+
+        <h3>Example 2 - with callback</h3>
+        <pre>
+            <code>
+                console.log( "Starting" )
                 function myFunction() {
-                    document.getElementById("demo").innerHTML = "I love Pakistan !!";
+                    console.log("I love Pakistan too!");
                 }
                 setTimeout(myFunction, 3000);
 
-                console.log("I love Pakistan too!");
+                console.log ('All done!')
 
 
                 // The function (myFunction) above will run after 3 seconds. 
