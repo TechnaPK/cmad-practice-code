@@ -12,8 +12,13 @@ function anotherFunction(){
     return 50 + num2;
 }
 
+
+
+// Named Exports
 export {someString, secondString, anotherFunction}
-export default myFunction()
+
+// Default Export
+export default myFunction
 
 
 

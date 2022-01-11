@@ -7,6 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS Modules</title>
     <script type="module" src="scripts/second.js"></script>
+    <script type="module">
+
+        import myFunction from './scripts/first.js';
+
+        console.log(myFunction());
+
+    </script>
 </head>
 
 <body>
@@ -17,12 +24,20 @@
     <h2 style="text-align: center;">A background on modules</h2>
 
     <p>JavaScript programs started off pretty small — most of its usage in the early days was to do isolated scripting
-        tasks, providing a bit of interactivity to your web pages where needed, so large scripts were generally not needed.
-        Fast forward a few years and we now have complete applications being run in browsers with a lot of JavaScript, as
+        tasks, providing a bit of interactivity to your web pages where needed, so large scripts were generally not
+        needed.
+        Fast forward a few years and we now have complete applications being run in browsers with a lot of JavaScript,
+        as
         well as JavaScript being used in other contexts (Node.js, for example).</p>
-    
+
     <p>It has therefore made sense in recent years to start thinking about providing mechanisms for splitting JavaScript
         programs up into separate modules that can be imported when needed.</p>
+
+    <p>In simple words: The idea is that you can create a JavaScript file that contains the code you want to use in your other files.</p>
+
+    <p>https://www.w3schools.com/react/react_es6_modules.asp</p>
+    <p>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules</p>
+
 
 </body>
 
