@@ -1,32 +1,32 @@
-var plan1 = {
+var user1 = {
 
-    name: "Basic",
-    price: 3.99,
-    pages: 10,
-    calcAnnual: function(){
-        return this.price * 12;
+    firstName: "Umar",
+    lastName: "Ahmad",
+    age: 22,
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
     }
 
 };
 
-var plan2 = {
+var user2 = {
 
-    name: "Professional",
-    price: 5.99,
-    pages: 50,
-    calcAnnual: function(){
-        return this.price * 12;
+    firstName: "Ali",
+    lastName: "Raza",
+    age: 28,
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
     }
 
 };
 
-var plan3 = {
+var user3 = {
 
-    name: "Ultimate",
-    price: 9.99,
-    pages: 500,
-    calcAnnual: function(){
-        return this.price * 12;
+    firstName: "Ahmad",
+    firstName: "Raza",
+    age: 15,
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
     }
-
+    
 };
